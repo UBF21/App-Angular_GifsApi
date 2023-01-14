@@ -1,0 +1,8 @@
+<h3 class="text-light text-center">Gifs-App</h3>
+<hr class="text-light" />
+<div class="list-group list-reset">
+
+    <button  *ngFor="let item of obtenerHistorial" 
+    class="list-group-item  fw-bold  text-center list-group-item-action mb-2 ms-1" 
+    (click)="buscar(item)" [ngClass]="valorSeleccionado === item ? 'seleccion' : '' " > {{ item | titlecase }} </button>
+</div>
